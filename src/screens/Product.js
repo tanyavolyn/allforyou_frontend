@@ -12,11 +12,11 @@ const Product = () => {
  // console.log(product)
   
   return (
-    <div>
+    <section>
       <SingleProduct product={product}/>
       {/* <CartItems product={product}/> */}
 
-       </div>
+       </section>
   )
 }
 

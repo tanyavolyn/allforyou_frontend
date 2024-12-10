@@ -1,6 +1,5 @@
 import React from "react";
-import {useNavigate
-} from "react-router-dom";
+import {Link} from "react-router-dom";
 import { useState } from "react";
 import { carousel } from "../data/carousel";
 
@@ -9,12 +8,9 @@ import '../App.css';
 
 function Gallery (){
 
-    const navigate = useNavigate();
     const [bild, setBild] = useState(0);
     const {id, image} = carousel[bild];
-    const navigateToShop =()=> {
-        navigate ('/shop');
-    }
+
  
     const previousBild = () =>{
         setBild((bild=>{
@@ -46,7 +42,8 @@ return(
 
             <div className="btncontainer">
             <button className="btngal" onClick={previousBild}>Back</button>
-            <button className="btngalshop" onClick={navigateToShop}>SHOP</button>
+        <Link  className="btngalshop" to="/shop">SHOP</Link>
+        
             <button className="btngal" onClick={nextBild}>Next</button>
             </div>
         

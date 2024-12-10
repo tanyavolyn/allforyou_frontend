@@ -17,7 +17,7 @@ function About(){
     
     return(
         
-        <div className="containerabout" >
+        <section className="containerabout" >
             <img className="aboutbild" data-aos="zoom-in" src="gal02.jpg" alt="Bild"/>
             <div className="abouttext" data-aos="zoom-in">
             <h3 className="abouttitel">All about us</h3>
@@ -25,7 +25,7 @@ function About(){
                 <p className="textabout" >{showMore ? text : text.substring(0,350) + "..."}<button className="btnabout" onClick={()=>setShowMore(!showMore)}>{showMore ? "Show less" : "Show more"}</button></p>
 
                 </div>
-        </div>
+        </section>
     )
 }
 export default About;

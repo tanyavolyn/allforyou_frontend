@@ -131,6 +131,9 @@ background-color: rgba(255, 255, 255, 0);
 
 
 .btngalshop{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 font-family: 'Montserrat', sans-serif;
 font-size: 18pt;
 color: #363636;
@@ -140,6 +143,7 @@ height: 75px;
 background-color: #ddddddb7;
 animation: slowmotion 3s;
 opacity: 1;
+text-decoration: none;
 
 }
 

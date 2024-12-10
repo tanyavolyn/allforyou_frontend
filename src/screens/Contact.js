@@ -11,7 +11,7 @@ function Contact (){
         }, [])
         
     return(
-        <div className="contactcontainer"> 
+        <section className="contactcontainer"> 
         <div className="anfahrt" data-aos="zoom-in">
 
           <h2>ANFAHRT</h2> 
@@ -25,7 +25,7 @@ function Contact (){
         <ContactForm/>
         </div>
    
-        </div>
+        </section>
         
     )
 }

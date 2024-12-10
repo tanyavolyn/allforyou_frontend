@@ -4,10 +4,10 @@ import CartItems from "../Components/CartItems.js";
 
 const Cart = () => {
     return(
-        <div className="cart">
+        <section className="cart">
             <CartItems/>
            
-        </div>
+        </section>
     )
 }
 

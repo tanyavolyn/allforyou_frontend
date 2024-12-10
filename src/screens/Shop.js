@@ -12,13 +12,13 @@ function Shop(){
 
     
     return(
-        <div>
+        <section>
             <div className="free">
                 <h2>Free Standart Shipping</h2>
             </div>
             <Button filteredClothes={chosenClothes} />
             <Clothes itemsForSale={clothes}/>
-        </div>
+        </section>
     );
 }
 export default Shop;
